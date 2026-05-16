@@ -1,39 +1,38 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000" role="img" aria-label="SK Imports professional logo">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000" role="img" aria-label="SK Imports Official Logo">
 <defs>
-<radialGradient id="bg" cx="50%" cy="42%" r="68%"><stop offset="0" stop-color="#0b243f"/><stop offset="0.55" stop-color="#051524"/><stop offset="1" stop-color="#010812"/></radialGradient>
-<linearGradient id="blue" x1="0" x2="1" y1="0" y2="1"><stop offset="0" stop-color="#00aeef"/><stop offset="0.52" stop-color="#0876d8"/><stop offset="1" stop-color="#003b8e"/></linearGradient>
+<radialGradient id="bg" cx="50%" cy="42%" r="70%"><stop offset="0" stop-color="#0a1f38"/><stop offset="0.55" stop-color="#061423"/><stop offset="1" stop-color="#010814"/></radialGradient>
+<linearGradient id="blue" x1="0" x2="1" y1="0" y2="1"><stop offset="0" stop-color="#00aeef"/><stop offset="0.55" stop-color="#0b7ef2"/><stop offset="1" stop-color="#0049a8"/></linearGradient>
 <linearGradient id="silver" x1="0" x2="1"><stop offset="0" stop-color="#ffffff"/><stop offset="0.5" stop-color="#cfd6df"/><stop offset="1" stop-color="#ffffff"/></linearGradient>
-<filter id="shadow"><feDropShadow dx="0" dy="15" stdDeviation="10" flood-color="#000" flood-opacity="0.42"/></filter>
+<filter id="shadow"><feDropShadow dx="0" dy="16" stdDeviation="12" flood-color="#000" flood-opacity="0.42"/></filter>
 </defs>
 <rect width="1000" height="1000" fill="#020914"/>
-<circle cx="500" cy="500" r="455" fill="url(#bg)" stroke="#4f555c" stroke-width="18"/>
-<circle cx="500" cy="500" r="405" fill="none" stroke="#0876d8" stroke-width="8"/>
-<circle cx="500" cy="500" r="376" fill="none" stroke="#123a63" stroke-width="2" opacity=".7"/>
-<g transform="translate(390 115)">
-<line x1="73" y1="148" x2="146" y2="25" stroke="#cbd2dc" stroke-width="10" stroke-linecap="round"/>
-<line x1="223" y1="148" x2="154" y2="25" stroke="#cbd2dc" stroke-width="10" stroke-linecap="round"/>
-<circle cx="146" cy="25" r="8" fill="#e8edf4"/><circle cx="154" cy="25" r="8" fill="#e8edf4"/>
+<circle cx="500" cy="500" r="455" fill="url(#bg)" stroke="#5f656d" stroke-width="18"/>
+<circle cx="500" cy="500" r="405" fill="none" stroke="#0b7ef2" stroke-width="8"/>
+<g transform="translate(392 112)">
+<line x1="74" y1="150" x2="146" y2="28" stroke="#d7dde5" stroke-width="10" stroke-linecap="round"/>
+<line x1="224" y1="150" x2="154" y2="28" stroke="#d7dde5" stroke-width="10" stroke-linecap="round"/>
+<circle cx="146" cy="28" r="8" fill="#eef3f9"/><circle cx="154" cy="28" r="8" fill="#eef3f9"/>
 </g>
-<g transform="translate(300 138) rotate(-7)">
-<path d="M0 22 C65 -9 130 -3 195 27 L195 118 C130 85 65 82 0 108 Z" fill="#075b2a"/>
-<rect x="0" y="22" width="54" height="86" fill="#fff"/>
-<circle cx="108" cy="70" r="25" fill="#fff"/>
-<circle cx="119" cy="66" r="25" fill="#075b2a"/>
-<path d="M142 50 l7 16 18 1-14 11 5 18-16-10-16 10 5-18-14-11 18-1z" fill="#fff"/>
+<g transform="translate(298 138) rotate(-7)">
+<path d="M0 22 C65 -10 132 -4 198 28 L198 118 C132 86 66 82 0 108 Z" fill="#08652e"/>
+<rect x="0" y="22" width="54" height="86" fill="#ffffff"/>
+<circle cx="108" cy="70" r="25" fill="#ffffff"/>
+<circle cx="119" cy="66" r="25" fill="#08652e"/>
+<path d="M142 50 l7 16 18 1-14 11 5 18-16-10-16 10 5-18-14-11 18-1z" fill="#ffffff"/>
 </g>
-<g transform="translate(523 138) rotate(7)">
-<path d="M0 30 C65 -2 130 -6 205 27 L205 115 C132 88 65 90 0 124 Z" fill="#de1f26"/>
+<g transform="translate(525 138) rotate(7)">
+<path d="M0 30 C65 -2 132 -7 208 28 L208 116 C133 88 66 90 0 124 Z" fill="#de1f26"/>
 <path d="M60 38 l11 26 29 2-22 18 8 28-26-16-25 16 8-28-22-18 28-2z" fill="#ffde00"/>
 <circle cx="130" cy="50" r="7" fill="#ffde00"/><circle cx="156" cy="68" r="7" fill="#ffde00"/><circle cx="136" cy="94" r="7" fill="#ffde00"/><circle cx="176" cy="43" r="7" fill="#ffde00"/>
 </g>
-<text x="435" y="515" text-anchor="middle" font-family="Poppins, Arial, sans-serif" font-size="315" font-weight="900" fill="url(#silver)" filter="url(#shadow)">S</text>
-<text x="625" y="515" text-anchor="middle" font-family="Poppins, Arial, sans-serif" font-size="315" font-weight="900" fill="url(#blue)" filter="url(#shadow)">K</text>
-<circle cx="790" cy="340" r="24" fill="none" stroke="#ef233c" stroke-width="5"/>
-<text x="790" y="350" text-anchor="middle" font-family="Arial, sans-serif" font-size="28" font-weight="800" fill="#ef233c">R</text>
-<line x1="155" y1="610" x2="205" y2="610" stroke="#0876d8" stroke-width="8"/>
-<line x1="795" y1="610" x2="845" y2="610" stroke="#0876d8" stroke-width="8"/>
-<text x="500" y="632" text-anchor="middle" font-family="Poppins, Arial, sans-serif" font-size="88" font-weight="800" letter-spacing="20" fill="url(#silver)">IMPORTS</text>
-<text x="500" y="705" text-anchor="middle" font-family="Poppins, Arial, sans-serif" font-size="30" font-weight="500" letter-spacing="9" fill="#f6fbff">MOBILE ACCESSORIES &amp; ELECTRONIC GADGETS</text>
-<line x1="405" y1="760" x2="595" y2="760" stroke="#0876d8" stroke-width="5"/>
-<text x="500" y="825" text-anchor="middle" font-family="Poppins, Arial, sans-serif" font-size="26" font-weight="600" letter-spacing="2" fill="#f6fbff">DIRECT CHINA IMPORTS  |  WHOLESALE &amp; RETAIL  |  BEST PRICES</text>
+<text x="430" y="515" text-anchor="middle" font-family="Poppins,Arial,sans-serif" font-size="315" font-weight="900" fill="url(#silver)" filter="url(#shadow)">S</text>
+<text x="625" y="515" text-anchor="middle" font-family="Poppins,Arial,sans-serif" font-size="315" font-weight="900" fill="url(#blue)" filter="url(#shadow)">K</text>
+<circle cx="792" cy="340" r="24" fill="none" stroke="#ef233c" stroke-width="5"/>
+<text x="792" y="350" text-anchor="middle" font-family="Arial,sans-serif" font-size="28" font-weight="800" fill="#ef233c">R</text>
+<line x1="155" y1="610" x2="205" y2="610" stroke="#0b7ef2" stroke-width="8"/>
+<line x1="795" y1="610" x2="845" y2="610" stroke="#0b7ef2" stroke-width="8"/>
+<text x="500" y="635" text-anchor="middle" font-family="Poppins,Arial,sans-serif" font-size="92" font-weight="800" letter-spacing="18" fill="url(#silver)">IMPORTS</text>
+<text x="500" y="708" text-anchor="middle" font-family="Poppins,Arial,sans-serif" font-size="31" font-weight="500" letter-spacing="8" fill="#f5fbff">MOBILE ACCESSORIES &amp; ELECTRONIC GADGETS</text>
+<line x1="400" y1="760" x2="600" y2="760" stroke="#0b7ef2" stroke-width="5"/>
+<text x="500" y="826" text-anchor="middle" font-family="Poppins,Arial,sans-serif" font-size="26" font-weight="600" letter-spacing="2" fill="#f5fbff">DIRECT CHINA IMPORTS  |  WHOLESALE &amp; RETAIL  |  BEST PRICES</text>
 </svg>

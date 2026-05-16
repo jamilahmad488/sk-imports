@@ -1,54 +1,198 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Shop | SK Imports</title>
-  <link rel="stylesheet" href="assets/css/style.css" />
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Shop | SK Imports</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css" />
 </head>
 <body>
-<header class="site-header"><div class="container nav-wrap"><a class="brand" href="index.html"><span class="brand-mark">SK</span><span>SK Imports</span></a><button class="menu-btn" id="menuBtn">☰</button><nav class="nav" id="nav"><a href="index.html">Home</a><a href="products.html">Products</a><a href="shop.html">Shop</a><a href="about.html">About</a><a href="contact.html">Contact</a></nav></div></header>
+<header class="site-header">
+<div class="container nav-wrap">
+<a class="brand" href="index.html">
+<img src="assets/images/logo.svg" alt="SK Imports" style="width:58px;height:58px;border-radius:50%">
+<span>SK Imports</span>
+</a>
+<button class="menu-btn" id="menuBtn">Menu</button>
+<nav class="nav" id="nav">
+<a href="index.html">Home</a>
+<a href="products.html">Products</a>
+<a href="shop.html">Shop</a>
+<a href="about.html">About</a>
+<a href="contact.html">Contact</a>
+</nav>
+</div>
+</header>
 
 <main class="container section page">
-  <h1>WhatsApp Order Catalog</h1>
-  <p class="lead">Select a product category and order directly through WhatsApp.</p>
+<h1>Product Catalog</h1>
+<p class="lead">Browse categories and place orders directly through WhatsApp.</p>
 
-  <div class="filters">
-    <button data-filter="all" class="active">All</button>
-    <button data-filter="accessories">Mobile Accessories</button>
-    <button data-filter="gadgets">Electronic Gadgets</button>
-    <button data-filter="instock">In Stock</button>
-  </div>
+<div class="filters">
+<a href="#mobile-accessories" class="btn primary">Mobile Accessories</a>
+<a href="#electronic-gadgets" class="btn primary">Electronic Gadgets</a>
+<a href="#bulk" class="btn whatsapp">Bulk Orders</a>
+</div>
 
-  <div class="shop-grid">
-    <article class="shop-card" data-category="accessories instock" id="chargers">
-      <div class="photo">Add Product Photo</div><span class="stock in">In Stock</span><h3>Fast Charging Adapter</h3><p>Wall charger options for Android and iPhone users.</p><b>Price: On Request</b><a class="btn whatsapp full" href="https://wa.me/923073342017?text=I%20want%20Fast%20Charging%20Adapter%20from%20SK%20Imports" target="_blank">Order on WhatsApp</a>
-    </article>
-    <article class="shop-card" data-category="accessories instock" id="cables">
-      <div class="photo">Add Product Photo</div><span class="stock in">In Stock</span><h3>Data Cables</h3><p>Type-C, Micro USB and Lightning cables.</p><b>Price: On Request</b><a class="btn whatsapp full" href="https://wa.me/923073342017?text=I%20want%20Data%20Cables%20from%20SK%20Imports" target="_blank">Order on WhatsApp</a>
-    </article>
-    <article class="shop-card" data-category="accessories instock" id="audio">
-      <div class="photo">Add Product Photo</div><span class="stock in">In Stock</span><h3>Earbuds / Earphones</h3><p>Wired and wireless audio accessories.</p><b>Price: On Request</b><a class="btn whatsapp full" href="https://wa.me/923073342017?text=I%20want%20Earbuds%20from%20SK%20Imports" target="_blank">Order on WhatsApp</a>
-    </article>
-    <article class="shop-card" data-category="accessories instock" id="protection">
-      <div class="photo">Add Product Photo</div><span class="stock in">In Stock</span><h3>Protective Covers</h3><p>Mobile cases, back covers and screen protection.</p><b>Price: On Request</b><a class="btn whatsapp full" href="https://wa.me/923073342017?text=I%20want%20Protective%20Covers%20from%20SK%20Imports" target="_blank">Order on WhatsApp</a>
-    </article>
-    <article class="shop-card" data-category="gadgets instock" id="gadgets">
-      <div class="photo">Add Product Photo</div><span class="stock in">In Stock</span><h3>Smart Watches</h3><p>Smart watch models for daily and business use.</p><b>Price: On Request</b><a class="btn whatsapp full" href="https://wa.me/923073342017?text=I%20want%20Smart%20Watch%20from%20SK%20Imports" target="_blank">Order on WhatsApp</a>
-    </article>
-    <article class="shop-card" data-category="gadgets">
-      <div class="photo">Add Product Photo</div><span class="stock out">Out of Stock</span><h3>Wireless Speakers</h3><p>Portable speakers and audio gadgets.</p><b>Price: On Request</b><a class="btn whatsapp full" href="https://wa.me/923275238548?text=Please%20notify%20me%20when%20Wireless%20Speakers%20are%20available" target="_blank">Notify Me</a>
-    </article>
-  </div>
+<section id="mobile-accessories" style="margin-top:40px">
+<div class="section-head">
+<h2>Mobile Accessories</h2>
+<p>High-quality accessories for retail and wholesale customers.</p>
+</div>
 
-  <section class="bulk-box" id="bulk">
-    <h2>Bulk & Custom Orders</h2>
-    <p>For retailer quantities, reseller pricing or special sourcing requests, contact the team directly.</p>
-    <a class="btn whatsapp" href="https://wa.me/923275238548?text=Hello%20Jawad%20Khan!%20I%20need%20bulk%20pricing%20for%20SK%20Imports%20products." target="_blank">Bulk Order on WhatsApp</a>
-  </section>
+<div class="shop-grid">
+<article class="shop-card" id="chargers">
+<div class="photo" style="background:url('https://images.unsplash.com/photo-1583863788434-e58a36330cf0?q=80&w=900&auto=format&fit=crop') center/cover"></div>
+<span class="stock in">In Stock</span>
+<h3>Charging Adapters</h3>
+<p>Fast wall chargers and premium charging solutions.</p>
+<a class="btn whatsapp full" href="https://wa.me/923073342017">Order on WhatsApp</a>
+</article>
+
+<article class="shop-card" id="fast-chargers">
+<div class="photo" style="background:url('https://images.unsplash.com/photo-1609592806596-b43c0b0becdb?q=80&w=900&auto=format&fit=crop') center/cover"></div>
+<span class="stock in">In Stock</span>
+<h3>Fast Chargers</h3>
+<p>High-speed USB and Type-C charging adapters.</p>
+<a class="btn whatsapp full" href="https://wa.me/923073342017">Order on WhatsApp</a>
+</article>
+
+<article class="shop-card" id="cables">
+<div class="photo" style="background:url('https://images.unsplash.com/photo-1580910051074-3eb694886505?q=80&w=900&auto=format&fit=crop') center/cover"></div>
+<span class="stock in">In Stock</span>
+<h3>Data Cables</h3>
+<p>Lightning, Micro USB and Type-C cables.</p>
+<a class="btn whatsapp full" href="https://wa.me/923073342017">Order on WhatsApp</a>
+</article>
+
+<article class="shop-card" id="earbuds">
+<div class="photo" style="background:url('https://images.unsplash.com/photo-1606220588913-b3aacb4d2f46?q=80&w=900&auto=format&fit=crop') center/cover"></div>
+<span class="stock in">In Stock</span>
+<h3>Earbuds / AirPods</h3>
+<p>Wireless earbuds and premium audio accessories.</p>
+<a class="btn whatsapp full" href="https://wa.me/923073342017">Order on WhatsApp</a>
+</article>
+
+<article class="shop-card" id="covers">
+<div class="photo" style="background:url('https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?q=80&w=900&auto=format&fit=crop') center/cover"></div>
+<span class="stock in">In Stock</span>
+<h3>Protective Covers</h3>
+<p>Mobile cases and shockproof covers.</p>
+<a class="btn whatsapp full" href="https://wa.me/923073342017">Order on WhatsApp</a>
+</article>
+
+<article class="shop-card" id="screen-protectors">
+<div class="photo" style="background:url('https://images.unsplash.com/photo-1598327105666-5b89351aff97?q=80&w=900&auto=format&fit=crop') center/cover"></div>
+<span class="stock in">In Stock</span>
+<h3>Screen Protectors</h3>
+<p>Tempered glass and screen safety products.</p>
+<a class="btn whatsapp full" href="https://wa.me/923073342017">Order on WhatsApp</a>
+</article>
+
+<article class="shop-card" id="power-banks">
+<div class="photo" style="background:url('https://images.unsplash.com/photo-1585338447937-7082f8fc763d?q=80&w=900&auto=format&fit=crop') center/cover"></div>
+<span class="stock in">In Stock</span>
+<h3>Power Banks</h3>
+<p>Portable charging and high-capacity power banks.</p>
+<a class="btn whatsapp full" href="https://wa.me/923073342017">Order on WhatsApp</a>
+</article>
+
+<article class="shop-card" id="car-accessories">
+<div class="photo" style="background:url('https://images.unsplash.com/photo-1503376780353-7e6692767b70?q=80&w=900&auto=format&fit=crop') center/cover"></div>
+<span class="stock in">In Stock</span>
+<h3>Car Accessories</h3>
+<p>Car chargers, holders and smart vehicle accessories.</p>
+<a class="btn whatsapp full" href="https://wa.me/923073342017">Order on WhatsApp</a>
+</article>
+</div>
+</section>
+
+<section id="electronic-gadgets" style="margin-top:70px">
+<div class="section-head">
+<h2>Electronic Gadgets</h2>
+<p>Modern smart gadgets and electronic devices.</p>
+</div>
+
+<div class="shop-grid">
+<article class="shop-card">
+<div class="photo" style="background:url('https://images.unsplash.com/photo-1546868871-7041f2a55e12?q=80&w=900&auto=format&fit=crop') center/cover"></div>
+<span class="stock in">In Stock</span>
+<h3>Smart Watches</h3>
+<p>Modern smart watches for daily use and fitness tracking.</p>
+<a class="btn whatsapp full" href="https://wa.me/923073342017">Order on WhatsApp</a>
+</article>
+
+<article class="shop-card">
+<div class="photo" style="background:url('https://images.unsplash.com/photo-1545454675-3531b543be5d?q=80&w=900&auto=format&fit=crop') center/cover"></div>
+<span class="stock in">In Stock</span>
+<h3>Wireless Speakers</h3>
+<p>Portable Bluetooth speakers and sound systems.</p>
+<a class="btn whatsapp full" href="https://wa.me/923073342017">Order on WhatsApp</a>
+</article>
+
+<article class="shop-card">
+<div class="photo" style="background:url('https://images.unsplash.com/photo-1587825140708-dfaf72ae4b04?q=80&w=900&auto=format&fit=crop') center/cover"></div>
+<span class="stock in">In Stock</span>
+<h3>Microphones</h3>
+<p>Studio and mobile recording microphones.</p>
+<a class="btn whatsapp full" href="https://wa.me/923073342017">Order on WhatsApp</a>
+</article>
+
+<article class="shop-card">
+<div class="photo" style="background:url('https://images.unsplash.com/photo-1580894908361-967195033215?q=80&w=900&auto=format&fit=crop') center/cover"></div>
+<span class="stock in">In Stock</span>
+<h3>Mobile Stands</h3>
+<p>Adjustable stands and desk holders.</p>
+<a class="btn whatsapp full" href="https://wa.me/923073342017">Order on WhatsApp</a>
+</article>
+
+<article class="shop-card">
+<div class="photo" style="background:url('https://images.unsplash.com/photo-1525547719571-a2d4ac8945e2?q=80&w=900&auto=format&fit=crop') center/cover"></div>
+<span class="stock in">In Stock</span>
+<h3>Ring Lights</h3>
+<p>LED ring lights for creators and photography.</p>
+<a class="btn whatsapp full" href="https://wa.me/923073342017">Order on WhatsApp</a>
+</article>
+
+<article class="shop-card">
+<div class="photo" style="background:url('https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=900&auto=format&fit=crop') center/cover"></div>
+<span class="stock in">In Stock</span>
+<h3>LED Lights</h3>
+<p>Decorative and smart LED lighting systems.</p>
+<a class="btn whatsapp full" href="https://wa.me/923073342017">Order on WhatsApp</a>
+</article>
+
+<article class="shop-card">
+<div class="photo" style="background:url('https://images.unsplash.com/photo-1606144042614-b2417e99c4e3?q=80&w=900&auto=format&fit=crop') center/cover"></div>
+<span class="stock in">In Stock</span>
+<h3>Gaming Accessories</h3>
+<p>Gaming gadgets and electronic accessories.</p>
+<a class="btn whatsapp full" href="https://wa.me/923073342017">Order on WhatsApp</a>
+</article>
+
+<article class="shop-card">
+<div class="photo" style="background:url('https://images.unsplash.com/photo-1519389950473-47ba0277781c?q=80&w=900&auto=format&fit=crop') center/cover"></div>
+<span class="stock in">In Stock</span>
+<h3>Other Smart Gadgets</h3>
+<p>Modern electronic gadgets and smart products.</p>
+<a class="btn whatsapp full" href="https://wa.me/923073342017">Order on WhatsApp</a>
+</article>
+</div>
+</section>
+
+<section class="bulk-box" id="bulk">
+<h2>Bulk & Custom Orders</h2>
+<p>For retailer quantities, reseller pricing or special sourcing requests, contact the team directly.</p>
+<a class="btn whatsapp" href="https://wa.me/923275238548?text=Hello%20Jawad%20Khan!%20I%20need%20bulk%20pricing%20for%20SK%20Imports%20products." target="_blank">Bulk Order on WhatsApp</a>
+</section>
 </main>
 
-<footer class="footer"><div class="container"><p><b>SK Imports</b> — Rawalpindi, Pakistan</p></div></footer>
+<footer class="footer">
+<div class="container"><p><b>SK Imports</b> — Rawalpindi, Pakistan</p></div>
+</footer>
 <script src="assets/js/script.js"></script>
 </body>
 </html>

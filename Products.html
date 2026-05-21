@@ -1,0 +1,323 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Products | SK Imports</title>
+<meta name="description" content="SK Imports product categories: mobile accessories, charging adapters, fast chargers, data cables, earbuds, power banks, smart watches, speakers and gadgets." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css" />
+<style>
+/* CSS Styles for the floating Admin camera button actions */
+.product-category-card {
+    position: relative !important;
+}
+.cms-cam-overlay-btn {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: rgba(36, 41, 47, 0.95);
+    color: #ffffff;
+    border: 2px solid #ffffff;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    font-size: 20px;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    z-index: 99;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.2s ease;
+}
+.cms-cam-overlay-btn:hover {
+    transform: scale(1.1);
+}
+</style>
+</head>
+<body>
+
+<div id="skAdminBar" style="background: #24292f; color: white; padding: 12px; text-align: center; font-family: 'Poppins', sans-serif; font-size: 13px; display: flex; justify-content: center; gap: 15px; align-items: center; border-bottom: 2px solid #00aeef;">
+    <span>🛠️ <strong>SK Imports CMS Engine:</strong> Image Replacement Mode</span>
+    <button onclick="toggleCmsEditIcons()" id="cmsToggleBtn" style="background: #00aeef; color: white; border: none; padding: 6px 16px; border-radius: 20px; cursor: pointer; font-family: 'Poppins', sans-serif; font-weight: 600; font-size: 12px; transition: 0.2s;">
+        🔒 Enable Camera Overlays
+    </button>
+</div>
+
+<header class="site-header">
+<div class="container nav-wrap">
+<a class="brand" href="index.html">
+<img src="assets/images/logo.png?v=3" alt="SK Imports" style="width:58px;height:58px;border-radius:50%;object-fit:cover;box-shadow:0 0 20px rgba(0,174,239,.2)">
+<span>SK Imports</span>
+</a>
+<button class="menu-btn" id="menuBtn">Menu</button>
+<nav class="nav" id="nav">
+<a href="index.html">Home</a>
+<a href="products.html">Products</a>
+<a href="shop.html">Shop</a>
+<a href="about.html">About</a>
+<a href="contact.html">Contact</a>
+</nav>
+</div>
+</header>
+
+<main class="container section page">
+<h1>Our Products</h1>
+<p class="lead">Explore SK Imports product categories. Each option is navigable and connects to the Shop page for WhatsApp ordering.</p>
+
+<div class="filters">
+<a class="btn primary" href="#mobile-accessories">Mobile Accessories</a>
+<a class="btn primary" href="#electronic-gadgets">Electronic Gadgets</a>
+<a class="btn whatsapp" href="shop.html#bulk">Bulk Orders</a>
+</div>
+
+<section id="mobile-accessories" class="section">
+<div class="section-head">
+<h2>Mobile Accessories</h2>
+<p>Retail and wholesale mobile accessories for daily customers, shops and resellers.</p>
+</div>
+<div class="category-grid">
+<a class="category-card product-category-card" href="shop.html#chargers">
+    <div class="product-thumb" id="thumb-charging_adapters" style="background-image:url('https://images.unsplash.com/photo-1583863788434-e58a36330cf0?q=80&w=900&auto=format&fit=crop')"></div>
+    <button class="cms-cam-overlay-btn" onclick="event.preventDefault(); launchStockCam('charging_adapters');" style="display: none;">📷</button>
+    <span class="category-label">Charging</span><h3>Charging Adapters</h3><p>Wall charging adapters and travel charging options.</p>
+</a>
+
+<a class="category-card product-category-card" href="shop.html#fast-chargers">
+    <div class="product-thumb" id="thumb-fast_chargers" style="background-image:url('https://images.unsplash.com/photo-1609592806596-b43c0b0becdb?q=80&w=900&auto=format&fit=crop')"></div>
+    <button class="cms-cam-overlay-btn" onclick="event.preventDefault(); launchStockCam('fast_chargers');" style="display: none;">📷</button>
+    <span class="category-label">Fast Charging</span><h3>Fast Chargers</h3><p>High-speed USB and Type-C charging solutions.</p>
+</a>
+
+<a class="category-card product-category-card" href="shop.html#cables">
+    <div class="product-thumb" id="thumb-data_cables" style="background-image:url('https://images.unsplash.com/photo-1580910051074-3eb694886505?q=80&w=900&auto=format&fit=crop')"></div>
+    <button class="cms-cam-overlay-btn" onclick="event.preventDefault(); launchStockCam('data_cables');" style="display: none;">📷</button>
+    <span class="category-label">Cables</span><h3>Data Cables</h3><p>Type-C, Micro USB and Lightning cables.</p>
+</a>
+
+<a class="category-card product-category-card" href="shop.html#earbuds">
+    <div class="product-thumb" id="thumb-earbuds_airpods" style="background-image:url('https://images.unsplash.com/photo-1606220588913-b3aacb4d2f46?q=80&w=900&auto=format&fit=crop')"></div>
+    <button class="cms-cam-overlay-btn" onclick="event.preventDefault(); launchStockCam('earbuds_airpods');" style="display: none;">📷</button>
+    <span class="category-label">Audio</span><h3>Earbuds / AirPods</h3><p>Wireless earbuds, handsfree and audio accessories.</p>
+</a>
+
+<a class="category-card product-category-card" href="shop.html#covers">
+    <div class="product-thumb" id="thumb-protective_covers" style="background-image:url('https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?q=80&w=900&auto=format&fit=crop')"></div>
+    <button class="cms-cam-overlay-btn" onclick="event.preventDefault(); launchStockCam('protective_covers');" style="display: none;">📷</button>
+    <span class="category-label">Protection</span><h3>Protective Covers</h3><p>Mobile cases, back covers and protective shells.</p>
+</a>
+
+<a class="category-card product-category-card" href="shop.html#screen-protectors">
+    <div class="product-thumb" id="thumb-screen_protectors" style="background-image:url('https://images.unsplash.com/photo-1598327105666-5b89351aff97?q=80&w=900&auto=format&fit=crop')"></div>
+    <button class="cms-cam-overlay-btn" onclick="event.preventDefault(); launchStockCam('screen_protectors');" style="display: none;">📷</button>
+    <span class="category-label">Glass</span><h3>Screen Protectors</h3><p>Tempered glass and screen safety accessories.</p>
+</a>
+
+<a class="category-card product-category-card" href="shop.html#power-banks">
+    <div class="product-thumb" id="thumb-power_banks" style="background-image:url('https://images.unsplash.com/photo-1585338447937-7082f8fc763d?q=80&w=900&auto=format&fit=crop')"></div>
+    <button class="cms-cam-overlay-btn" onclick="event.preventDefault(); launchStockCam('power_banks');" style="display: none;">📷</button>
+    <span class="category-label">Power</span><h3>Power Banks</h3><p>Portable charging and backup power products.</p>
+</a>
+
+<a class="category-card product-category-card" href="shop.html#car-accessories">
+    <div class="product-thumb" id="thumb-car_accessories" style="background-image:url('https://images.unsplash.com/photo-1503376780353-7e6692767b70?q=80&w=900&auto=format&fit=crop')"></div>
+    <button class="cms-cam-overlay-btn" onclick="event.preventDefault(); launchStockCam('car_accessories');" style="display: none;">📷</button>
+    <span class="category-label">Car</span><h3>Car Accessories</h3><p>Car chargers, holders and smart vehicle accessories.</p>
+</a>
+</div>
+</section>
+
+<section id="electronic-gadgets" class="section">
+<div class="section-head">
+<h2>Electronic Gadgets</h2>
+<p>Smart gadgets, creator tools and electronic accessories for modern users.</p>
+</div>
+<div class="category-grid">
+<a class="category-card product-category-card" href="shop.html#electronic-gadgets">
+    <div class="product-thumb" id="thumb-smart_watches" style="background-image:url('https://images.unsplash.com/photo-1546868871-7041f2a55e12?q=80&w=900&auto=format&fit=crop')"></div>
+    <button class="cms-cam-overlay-btn" onclick="event.preventDefault(); launchStockCam('smart_watches');" style="display: none;">📷</button>
+    <span class="category-label">Wearables</span><h3>Smart Watches</h3><p>Smart watches for fitness, calls and daily use.</p>
+</a>
+
+<a class="category-card product-category-card" href="shop.html#electronic-gadgets">
+    <div class="product-thumb" id="thumb-wireless_speakers" style="background-image:url('https://images.unsplash.com/photo-1545454675-3531b543be5d?q=80&w=900&auto=format&fit=crop')"></div>
+    <button class="cms-cam-overlay-btn" onclick="event.preventDefault(); launchStockCam('wireless_speakers');" style="display: none;">📷</button>
+    <span class="category-label">Audio</span><h3>Wireless Speakers</h3><p>Portable speakers and Bluetooth sound devices.</p>
+</a>
+
+<a class="category-card product-category-card" href="shop.html#electronic-gadgets">
+    <div class="product-thumb" id="thumb-microphones" style="background-image:url('https://images.unsplash.com/photo-1587825140708-dfaf72ae4b04?q=80&w=900&auto=format&fit=crop')"></div>
+    <button class="cms-cam-overlay-btn" onclick="event.preventDefault(); launchStockCam('microphones');" style="display: none;">📷</button>
+    <span class="category-label">Recording</span><h3>Microphones</h3><p>Mobile, studio and content recording microphones.</p>
+</a>
+
+<a class="category-card product-category-card" href="shop.html#electronic-gadgets">
+    <div class="product-thumb" id="thumb-mobile_stands" style="background-image:url('https://images.unsplash.com/photo-1580894908361-967195033215?q=80&w=900&auto=format&fit=crop')"></div>
+    <button class="cms-cam-overlay-btn" onclick="event.preventDefault(); launchStockCam('mobile_stands');" style="display: none;">📷</button>
+    <span class="category-label">Stands</span><h3>Mobile Stands</h3><p>Desk stands, holders and adjustable supports.</p>
+</a>
+
+<a class="category-card product-category-card" href="shop.html#electronic-gadgets">
+    <div class="product-thumb" id="thumb-ring_lights" style="background-image:url('https://images.unsplash.com/photo-1525547719571-a2d4ac8945e2?q=80&w=900&auto=format&fit=crop')"></div>
+    <button class="cms-cam-overlay-btn" onclick="event.preventDefault(); launchStockCam('ring_lights');" style="display: none;">📷</button>
+    <span class="category-label">Lighting</span><h3>Ring Lights</h3><p>Lighting tools for video, photos and live streaming.</p>
+</a>
+
+<a class="category-card product-category-card" href="shop.html#electronic-gadgets">
+    <div class="product-thumb" id="thumb-led_lights" style="background-image:url('https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=900&auto=format&fit=crop')"></div>
+    <button class="cms-cam-overlay-btn" onclick="event.preventDefault(); launchStockCam('led_lights');" style="display: none;">📷</button>
+    <span class="category-label">LED</span><h3>LED Lights</h3><p>Decorative and smart LED lighting products.</p>
+</a>
+
+<a class="category-card product-category-card" href="shop.html#electronic-gadgets">
+    <div class="product-thumb" id="thumb-gaming_accessories" style="background-image:url('https://images.unsplash.com/photo-1606144042614-b2417e99c4e3?q=80&w=900&auto=format&fit=crop')"></div>
+    <button class="cms-cam-overlay-btn" onclick="event.preventDefault(); launchStockCam('gaming_accessories');" style="display: none;">📷</button>
+    <span class="category-label">Gaming</span><h3>Gaming Accessories</h3><p>Gaming gadgets and related electronic accessories.</p>
+</a>
+
+<a class="category-card product-category-card" href="shop.html#electronic-gadgets">
+    <div class="product-thumb" id="thumb-other_smart_gadgets" style="background-image:url('https://images.unsplash.com/photo-1519389950473-47ba0277781c?q=80&w=900&auto=format&fit=crop')"></div>
+    <button class="cms-cam-overlay-btn" onclick="event.preventDefault(); launchStockCam('other_smart_gadgets');" style="display: none;">📷</button>
+    <span class="category-label">Smart</span><h3>Other Smart Gadgets</h3><p>Useful smart devices and modern electronic products.</p>
+</a>
+</div>
+</section>
+</main>
+
+<div id="skCameraModal" style="display: none; position: fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.85); justify-content:center; align-items:center; z-index: 100000; font-family: 'Poppins', sans-serif;">
+    <div style="background: white; padding: 25px; border-radius: 16px; width: 90%; max-width: 460px; text-align: center; box-shadow: 0 10px 30px rgba(0,0,0,0.3);">
+        <h3 id="cmsModalTitle" style="margin-top: 0; color: #24292f; font-weight: 700;">Capture Stock Photo</h3>
+        <p style="font-size:13px; color:#57606a; margin-top:-5px; margin-bottom:15px;">Position the product inside the frame cleanly.</p>
+        <div style="position: relative; width: 100%; height: 320px; background: #000; border-radius: 12px; overflow: hidden; margin-bottom: 20px; box-shadow: inset 0 0 20px rgba(0,0,0,0.6);">
+            <video id="cmsVideoFeed" autoplay playsinline style="width: 100%; height: 100%; object-fit: cover;"></video>
+        </div>
+        <div style="display: flex; justify-content: center; gap: 12px;">
+            <button onclick="executeSnapshotCapture()" style="background: #2db742; color: white; border: none; padding: 12px 28px; border-radius: 25px; font-weight: bold; font-family: 'Poppins', sans-serif; cursor: pointer; box-shadow: 0 4px 12px rgba(45,183,66,0.3);">Snap Photo</button>
+            <button onclick="closeActiveCamera()" style="background: #cf222e; color: white; border: none; padding: 12px 28px; border-radius: 25px; font-weight: bold; font-family: 'Poppins', sans-serif; cursor: pointer;">Cancel</button>
+        </div>
+    </div>
+</div>
+
+<canvas id="skCanvasEngine" style="display: none;" width="800" height="600"></canvas>
+
+<footer class="footer"><div class="container"><p><b>SK Imports</b> — Rawalpindi, Pakistan</p></div></footer>
+<script src="assets/js/script.js"></script>
+
+<script>
+let skDatabase = null;
+let currentActiveStream = null;
+let cmsEditState = false;
+let targetedProductKey = null;
+
+const dbConfigurationName = "SK_Imports_Product_System";
+const databaseObjectStoreKey = "cached_stock_images";
+
+document.addEventListener("DOMContentLoaded", () => {
+    openCmsSystemDatabase().then(overrideDummyStorefrontImages);
+});
+
+// Create/Open IndexedDB local storage structures
+function openCmsSystemDatabase() {
+    return new Promise((resolve) => {
+        const request = indexedDB.open(dbConfigurationName, 1);
+        request.onupgradeneeded = (event) => {
+            const db = event.target.result;
+            if (!db.objectStoreNames.contains(databaseObjectStoreKey)) {
+                db.createObjectStore(databaseObjectStoreKey, { keyPath: "productId" });
+            }
+        };
+        request.onsuccess = (event) => {
+            skDatabase = event.target.result;
+            resolve();
+        };
+    });
+}
+
+// Show and hide edit buttons over your layout elements
+function toggleCmsEditIcons() {
+    cmsEditState = !cmsEditState;
+    const interfaceBtn = document.getElementById("cmsToggleBtn");
+    
+    if (cmsEditState) {
+        interfaceBtn.innerText = "🔒 Lock Layout Configuration";
+        interfaceBtn.style.background = "#2db742";
+    } else {
+        interfaceBtn.innerText = "🔒 Enable Camera Overlays";
+        interfaceBtn.style.background = "#00aeef";
+    }
+    
+    const overlays = document.querySelectorAll(".cms-cam-overlay-btn");
+    overlays.forEach(button => button.style.display = cmsEditState ? "flex" : "none");
+}
+
+// Spin up camera hardware loops safely
+async function launchStockCam(productId) {
+    targetedProductKey = productId;
+    
+    // Formatting Title display dynamically
+    const readableName = productId.replace('_', ' ').replace(/(^\w|\s\w)/g, m => m.toUpperCase());
+    document.getElementById("cmsModalTitle").innerText = `Update: ${readableName}`;
+    document.getElementById("skCameraModal").style.display = "flex";
+    
+    try {
+        currentActiveStream = await navigator.mediaDevices.getUserMedia({
+            video: { width: 800, height: 600, facingMode: "environment" } // Mobile primary back lens optimization
+        });
+        document.getElementById("cmsVideoFeed").srcObject = currentActiveStream;
+    } catch (err) {
+        alert("Camera access was blocked. Verify site permissions inside browser security panel.");
+        closeActiveCamera();
+    }
+}
+
+function closeActiveCamera() {
+    document.getElementById("skCameraModal").style.display = "none";
+    if (currentActiveStream) {
+        currentActiveStream.getTracks().forEach(track => track.stop());
+    }
+}
+
+// Frame capture processes
+function executeSnapshotCapture() {
+    const video = document.getElementById("cmsVideoFeed");
+    const canvas = document.getElementById("skCanvasEngine");
+    const ctx = canvas.getContext("2d");
+    
+    ctx.drawImage(video, 0, 0, canvas.width, canvas.height);
+    const convertedJpegBase64 = canvas.toDataURL("image/jpeg", 0.88);
+    
+    saveCapturedAssetLocally(targetedProductKey, convertedJpegBase64);
+    document.getElementById(`thumb-${targetedProductKey}`).style.backgroundImage = `url('${convertedJpegBase64}')`;
+    
+    closeActiveCamera();
+}
+
+function saveCapturedAssetLocally(pId, binaryDataPayload) {
+    const transaction = skDatabase.transaction([databaseObjectStoreKey], "readwrite");
+    const store = transaction.objectStore(databaseObjectStoreKey);
+    store.put({ productId: pId, imagePayload: binaryDataPayload });
+}
+
+// Scans local database blocks on fresh load triggers and converts Unsplash URLs to real media payloads
+function overrideDummyStorefrontImages() {
+    const transaction = skDatabase.transaction([databaseObjectStoreKey], "readonly");
+    const store = transaction.objectStore(databaseObjectStoreKey);
+    const cursorRequest = store.openCursor();
+    
+    cursorRequest.onsuccess = (event) => {
+        const cursor = event.target.result;
+        if (cursor) {
+            const layoutTargetDiv = document.getElementById(`thumb-${cursor.value.productId}`);
+            if (layoutTargetDiv) {
+                layoutTargetDiv.style.backgroundImage = `url('${cursor.value.imagePayload}')`;
+            }
+            cursor.continue();
+        }
+    };
+}
+</script>
+</body>
+</html>
